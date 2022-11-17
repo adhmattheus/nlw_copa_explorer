@@ -12,10 +12,10 @@ body {
   background-color: #121214;
   background-image: url(./assets/bgblue.svg.svg);
   background-position-x: center;
-  background-position-y: 55%;
+  background-position-y: -715px;
 }
 
-body {
+body * {
   font-family: "Roboto", sans-serif;
 }
 
@@ -26,6 +26,13 @@ body {
 
 header {
   margin-bottom: 63px;
+  text-align: center;
+}
+
+#cards{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .card {
@@ -66,13 +73,14 @@ header {
   gap: 24px;
   width: 270px;
 }
+
 .card ul li {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.card ul li + li {
+.card ul li+li {
   padding-top: 24px;
   border-top: 1px solid #323238;
 }
